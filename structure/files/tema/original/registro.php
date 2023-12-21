@@ -54,8 +54,8 @@
     <meta property="og:locale" content="pt_BR">
     <meta property="fb:app_id" content="-">
     <meta property="article:tag" content="quiz">
-    <meta property="article:author" content="<?php echo facebooklink ?>">
-    <meta property="article:publisher" content="<?php echo facebooklink ?>">
+    <meta property="article:author" content="<?php echo facebook ?>">
+    <meta property="article:publisher" content="<?php echo facebook ?>">
 
     <meta name="twitter:card" content="photo">
     <meta name="twitter:title" content="<?php echo nome ?> Hotel">
