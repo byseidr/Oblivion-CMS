@@ -7,7 +7,7 @@
      <link rel="stylesheet" type="text/css" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/game/flashalerta.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/game/object.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
 </head>
 
         <div id="descongelarautomatico" style="display: none;"></div>

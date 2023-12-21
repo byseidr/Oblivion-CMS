@@ -64,7 +64,7 @@
 
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/OneSignalPageSDKES6.js" async=""></script>
     <link href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/animate.css">
     <link href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
     <style type="text/css">
@@ -651,8 +651,8 @@
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/angular-animate.min.js" type="text/javascript"></script>
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/jquery-3.4.1.min.js"></script>
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/api.js" async="" defer=""></script>
-    <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
     <script>
         function getCookie(cname) {
             var name = cname + "=";
