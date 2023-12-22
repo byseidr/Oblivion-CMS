@@ -8,7 +8,7 @@ $qra        = "SELECT * FROM cms_news WHERE id=".$noticiafinal." LIMIT 1";
 if ($ra = mysqli_query($conn, $qra)) {
 $existe = mysqli_num_rows($ra);
 if ($existe == $vlsalsa) {
-header("Location: /".$config['404page']."");
+header("Location: /".$_ENV['404PAGE']."");
 }
 mysqli_free_result($ra);
 }

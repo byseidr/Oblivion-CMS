@@ -10,7 +10,13 @@
  *
 */
 session_start();
-include ''.$_SERVER['DOCUMENT_ROOT'].'/arc.config.php';
+
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php')) {
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php');
+}
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv->load();
+
 $dir = '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/functions/';
 $dir = dir($dir);
 while ($arquivo = $dir->read()) {
@@ -36,7 +42,7 @@ if (isset($_GET['url'])) {
             include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_GET['url'] . '.php';
         }
     } else {
-        include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $config['404page'] . '.php';
+        include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_ENV['404PAGE'] . '.php';
     }
 }
 

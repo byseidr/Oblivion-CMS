@@ -41,30 +41,30 @@
 
     <script id="sclient" type="text/javascript">
         var flashvars = {
-            "external.texts.txt":"<?php echo $config['external.texts.txt'] ?>",
-            "connection.info.port":"<?php echo $config['connection.info.port'] ?>",
-            "furnidata.load.url":"<?php echo $config['furnidata.load.url'] ?>",
-            "external.variables.txt":"<?php echo $config['external.variables.txt'] ?>",
+            "external.texts.txt":"<?php echo $_ENV['EXTERNAL_TEXTS_TXT'] ?>",
+            "connection.info.port":"<?php echo $_ENV['CONNECTION_INFO_PORT'] ?>",
+            "furnidata.load.url":"<?php echo $_ENV['FURNIDATA_LOAD_URL'] ?>",
+            "external.variables.txt":"<?php echo $_ENV['EXTERNAL_VARIABLES_TXT'] ?>",
             "client.allow.cross.domain":"1",
-            "url.prefix":"<?php echo $config['url.prefix'] ?>",
-            "external.override.texts.txt":"<?php echo $config['external.override.texts.txt'] ?>",
+            "url.prefix":"<?php echo $_ENV['URL_PREFIX'] ?>",
+            "external.override.texts.txt":"<?php echo $_ENV['EXTERNAL_OVERRIDE_TEXTS_TXT'] ?>",
             "supersonic_custom_css":"https:\/\/images.habbo.com\/game-data-server-static\/\/.\/hotel.731d1960.css",
-            "external.figurepartlist.txt":"<?php echo $config['external.figurepartlist.txt'] ?>",
+            "external.figurepartlist.txt":"<?php echo $_ENV['EXTERNAL_FIGUREPARTLIST_TXT'] ?>",
             "flash.client.origin":"popup",
             "client.starting":"Por favor aguarde! O Habbo est\u00E1 carregando...",
             "processlog.enabled":"1",
             "has.identity":"1",
             "avatareditor.promohabbos":"https:\/\/www.habbo.com.br\/api\/public\/lists\/hotlooks",
-            "productdata.load.url":"<?php echo $config['productdata.load.url'] ?>",
+            "productdata.load.url":"<?php echo $_ENV['PRODUCTDATA_LOAD_URL'] ?>",
             "client.starting.revolving":"Quando voc\u00EA menos esperar...terminaremos de carregar...\/Carregando mensagem divertida! Por favor espere.\/Voc\u00EA quer batatas fritas para acompanhar?\/Siga o pato amarelo.\/O tempo \u00E9 apenas uma ilus\u00E3o.\/J\u00E1 chegamos?!\/Eu gosto da sua camiseta.\/Olhe para um lado. Olhe para o outro. Pisque duas vezes. Pronto!\/N\u00E3o \u00E9 voc\u00EA, sou eu.\/Shhh! Estou tentando pensar aqui.\/Carregando o universo de pixels.",
-            "external.override.variables.txt":"<?php echo $config['external.override.variables.txt'] ?>",
+            "external.override.variables.txt":"<?php echo $_ENV['EXTERNAL_OVERRIDE_VARIABLES_TXT'] ?>",
             "spaweb":"1",
             "supersonic_application_key":"2c63c535",
-            "connection.info.host":"<?php echo $config['connection.info.host'] ?>",
+            "connection.info.host":"<?php echo $_ENV['CONNECTION_INFO_HOST'] ?>",
             "sso.ticket":"<?php SalsaSSo::sso($conn) ?>",
             "client.notify.cross.domain":"0",
             "account_id":"<?php echo id ?>",
-            "flash.client.url":"<?php echo $config['flash.client.url'] ?>",
+            "flash.client.url":"<?php echo $_ENV['FLASH_CLIENT_URL'] ?>",
             "unique_habbo_id":"hhbr-<?php SalsaDado::unicoid() ?>",
         };
     </script>
@@ -72,13 +72,13 @@
 
     <script type="text/javascript">
         var params = {
-            "base" : "<?php echo $config['flash.client.url'] ?>",
+            "base" : "<?php echo $_ENV['FLASH_CLIENT_URL'] ?>",
             "allowScriptAccess" : "always",
             "menu" : "false",
             "sclient": 1,
             "wmode": "opaque"
         };
-        swfobject.embedSWF('<?php echo $config['habbo.swf'] ?>', 'flash-container', '100%', '100%', '11.1.0', '//images.habbo.com/habboweb/63_1d5d8853040f30be0cc82355679bba7c/12068/web-gallery/flash/expressInstall.swf', flashvars, params, null, null);
+        swfobject.embedSWF('<?php echo $_ENV['HABBO_SWF'] ?>', 'flash-container', '100%', '100%', '11.1.0', '//images.habbo.com/habboweb/63_1d5d8853040f30be0cc82355679bba7c/12068/web-gallery/flash/expressInstall.swf', flashvars, params, null, null);
     </script>
 </head>
 <body>

@@ -15,7 +15,7 @@ if (strrpos($_SERVER["REQUEST_URI"], ".php") || strrpos($_SERVER["REQUEST_URI"],
         header("Location: /");
         exit;
 }
-$conn = mysqli_connect($config['database_hostname'], $config['database_username'], $config['database_password'], $config['database_name']);
+$conn = mysqli_connect($_ENV['DATABASE_HOSTNAME'], $_ENV['DATABASE_USERNAME'], $_ENV['DATABASE_PASSWORD'], $_ENV['DATABASE_NAME']);
 if (!$conn) {
 ?>
 

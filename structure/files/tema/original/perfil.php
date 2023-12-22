@@ -4,7 +4,7 @@ $qra        = "SELECT * FROM users WHERE username='".$noticiafinal."' order by i
 if ($ra = mysqli_query($conn, $qra)) {
 $existe = mysqli_num_rows($ra);
 if ($existe == $vlsalsa) {
-header("Location: /".$config['404page']."");
+header("Location: /".$_ENV['404PAGE']."");
 }
 mysqli_free_result($ra);
 }
