@@ -136,12 +136,18 @@ include 'header.php' ?>
                                             <input hidden=""  type="text" name="id" <?php echo $value ?>/>
                                             <input hidden=""  type="text" name="usuario" <?php echo $value2 ?>/>
                                             <input hidden=""  type="text" name="valor" <?php echo $value3 ?>/>
+                                            <?php
+                                            if ($row['curtidas']) {
+                                            ?>
                                             <span  class="likeCount ng-binding btn btn-primary">
                                                  <salsa id="contasalsa<?php echo $row['id'] ?>">
                                                  
                                                <?php echo $row['curtidas'] ?>
                                             </salsa>
                                             </span>
+                                            <?php
+                                            }
+                                            ?>
 
     <button style="color: white;" onclick="salsa<?php echo $row['id'] ?>();" id="contasalsa" class="btn btn-primary" type="submit" name="curtidas">
         Curtir
