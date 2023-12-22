@@ -11,38 +11,38 @@
 */
 session_start();
 
-if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php')) {
-    require_once($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php');
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '../vendor/autoload.php')) {
+    require_once($_SERVER['DOCUMENT_ROOT'] . '../vendor/autoload.php');
 }
-$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . "..");
 $dotenv->load();
 
-$dir = '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/functions/';
+$dir = '' . $_SERVER['DOCUMENT_ROOT'] . '../structure/functions/';
 $dir = dir($dir);
 while ($arquivo = $dir->read()) {
     if ($arquivo == ".." || $arquivo == ".") {
     } else {
-        include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/functions/' . $arquivo . '';
+        include '' . $_SERVER['DOCUMENT_ROOT'] . '../structure/functions/' . $arquivo . '';
     }
 }
 $dir->close();
 if ($_SERVER["REQUEST_URI"] == "/") header("Location: /index");
 if (isset($_GET['url'])) {
-    $arquivo = '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_GET['url'] . '.php';
+    $arquivo = '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
     if (file_exists($arquivo)) {
         if (manutencao == 1 && $mns == 0) {
             if ($_SERVER["REQUEST_URI"] != "/manutencao") {
                 header("Location: /manutencao");
             } else {
-                include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/manutencao.php';
+                include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/manutencao.php';
             }
         } elseif (manutencao == 1 && $mns == 1) {
-            include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_GET['url'] . '.php';
+            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
         } else {
-            include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_GET['url'] . '.php';
+            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
         }
     } else {
-        include '' . $_SERVER['DOCUMENT_ROOT'] . '/structure/files/tema/' . tema . '/' . $_ENV['404PAGE'] . '.php';
+        include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_ENV['404PAGE'] . '.php';
     }
 }
 
