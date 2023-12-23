@@ -2,7 +2,7 @@
 $titulo = "".usuario.":  Configurações - ".nome."";
 include 'header.php';
  $sql3 = "SELECT * FROM users WHERE username='" . usuario . "'";
-    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
     while ($row2 = $query1->fetch_assoc()) {
        $missao = $row2['motto']; 
        $email = $row2['mail'];
@@ -28,7 +28,7 @@ include 'header.php';
                     <div class="alert alert-primary" role="alert">
                     <?php 
 
-                SalsaConta::configuracoes($conn);
+                SalsaConta::configuracoes(conn);
                 if (isset($_SESSION['erro']))
                         {
                             echo $_SESSION['erro'];

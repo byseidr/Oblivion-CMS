@@ -61,7 +61,7 @@
             "spaweb":"1",
             "supersonic_application_key":"2c63c535",
             "connection.info.host":"<?php echo $_ENV['CONNECTION_INFO_HOST'] ?>",
-            "sso.ticket":"<?php SalsaSSo::sso($conn) ?>",
+            "sso.ticket":"<?php SalsaSSo::sso(conn) ?>",
             "client.notify.cross.domain":"0",
             "account_id":"<?php echo id ?>",
             "flash.client.url":"<?php echo $_ENV['FLASH_CLIENT_URL'] ?>",

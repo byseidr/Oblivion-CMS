@@ -17,26 +17,19 @@ if (file_exists($_SERVER['DOCUMENT_ROOT'] . '../vendor/autoload.php')) {
 $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . "..");
 $dotenv->load();
 
-$dir = '' . $_SERVER['DOCUMENT_ROOT'] . '../structure/functions/';
-$dir = dir($dir);
-while ($arquivo = $dir->read()) {
-    if ($arquivo == ".." || $arquivo == ".") {
-    } else {
-        include '' . $_SERVER['DOCUMENT_ROOT'] . '../structure/functions/' . $arquivo . '';
-    }
-}
-$dir->close();
+Oblivion\Oblivion::init($dotenv);
+
 if ($_SERVER["REQUEST_URI"] == "/") header("Location: /index");
 if (isset($_GET['url'])) {
     $arquivo = '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
     if (file_exists($arquivo)) {
-        if (manutencao == 1 && $mns == 0) {
+        if (manutencao == 1 && mns == 0) {
             if ($_SERVER["REQUEST_URI"] != "/manutencao") {
                 header("Location: /manutencao");
             } else {
                 include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/manutencao.php';
             }
-        } elseif (manutencao == 1 && $mns == 1) {
+        } elseif (manutencao == 1 && mns == 1) {
             include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
         } else {
             include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';

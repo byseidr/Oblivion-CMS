@@ -15,7 +15,7 @@ include 'header.php';
 
                      <?php
                             $sql = "SELECT * FROM cms_news order by id DESC LIMIT 20";
-      $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+      $query = mysqli_query(conn, $sql) or die(mysqli_error(conn));
       while($row = $query->fetch_assoc())
       {
         ?>

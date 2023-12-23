@@ -21,7 +21,7 @@ include 'header.php';
                                 
                                 <?php
                                 $sql3 = "SELECT * FROM users WHERE rank=13";
-    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
                                 <div class="col-md-6">
@@ -72,7 +72,7 @@ include 'header.php';
             <div class="row">
                                 <?php
                                 $sql3 = "SELECT * FROM users WHERE rank=12";
-    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
                                 <div class="col-md-6">
@@ -121,7 +121,7 @@ include 'header.php';
                                 
                             <?php
                                 $sql3 = "SELECT * FROM users WHERE rank=11";
-    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
                                 <div class="col-md-6">
@@ -174,7 +174,7 @@ include 'header.php';
                                
                              <?php
                                 $sql3 = "SELECT * FROM users WHERE rank=9";
-    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
                                 <div class="col-md-6">

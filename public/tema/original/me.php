@@ -29,7 +29,7 @@ include 'header.php' ?>
 
                 </div>
                
-                <?php SalsaConta::publicar($conn); SalsaConta::curtir($conn) ?>
+                <?php SalsaConta::publicar(conn); SalsaConta::curtir(conn) ?>
                  <?php
                         if (isset($_SESSION['erro']))
                         {
@@ -47,7 +47,7 @@ include 'header.php' ?>
                             <li class="list-group-item feed-item clearfix">
                                 <form method="POST" class="ng-pristine ng-valid ng-valid-maxlength">
                                     
-                                    <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $roupa ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
+                                    <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo roupa ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                     <div class="feed-item-body">
                                         <div class="feed-item-title"></div>
                                         <div class="feed-item-content">
@@ -66,11 +66,11 @@ include 'header.php' ?>
 
                             <?php
                             $sql = "SELECT * FROM salsa_posts order by id DESC LIMIT 20";
-      $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+      $query = mysqli_query(conn, $sql) or die(mysqli_error(conn));
       while($row = $query->fetch_assoc())
       {
          $nova = "SELECT * FROM users WHERE username='".$row['usuario']."'";
-        $qrm = mysqli_query($conn, $nova) or die(mysqli_error($conn));
+        $qrm = mysqli_query(conn, $nova) or die(mysqli_error(conn));
         while($row77 = $qrm->fetch_assoc())
         {
             
@@ -261,7 +261,7 @@ include 'header.php' ?>
                             <div class="carousel-inner">
                                   <?php
                             $sql = "SELECT * FROM cms_news order by id DESC LIMIT 1";
-      $qaqa = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+      $qaqa = mysqli_query(conn, $sql) or die(mysqli_error(conn));
       while($row111 = $qaqa->fetch_assoc())
       {
         ?>
@@ -285,7 +285,7 @@ include 'header.php' ?>
                     </div>
                        <?php
                             $a = "SELECT * FROM cms_news order by id DESC LIMIT 6";
-      $gg = mysqli_query($conn, $a) or die(mysqli_error($conn));
+      $gg = mysqli_query(conn, $a) or die(mysqli_error(conn));
       while($noticia = $gg->fetch_assoc())
       {
         ?>
@@ -307,7 +307,7 @@ include 'header.php' ?>
                         
                       <?php
       $aBC = "SELECT * FROM users order by credits DESC LIMIT 6";
-      $QQ = mysqli_query($conn, $aBC) or die(mysqli_error($conn));
+      $QQ = mysqli_query(conn, $aBC) or die(mysqli_error(conn));
       while($MOEDAS = $QQ->fetch_assoc())
       {
         ?>
@@ -344,7 +344,7 @@ include 'header.php' ?>
  <input placeholder="Digite o nome de usuário..." class="form-control" type="text" name="usuariobus">
 
 
-            <?php SalsaConta::buscar_usuario($conn) ?>
+            <?php SalsaConta::buscar_usuario(conn) ?>
            <br>
             <button style="float: right;" type="submit" name="pesq" class="btn btn-dark">Procurar</button> 
            <br>
@@ -361,7 +361,7 @@ include 'header.php' ?>
 
       <div class="list-group-item config-controller open" data-target="#config">
             
-        Você possui <b><?php echo $referidos ?></b> referidos.<br>
+        Você possui <b><?php echo referidos ?></b> referidos.<br>
         
         <p>Chame novas pessoas para o hotel usando o seu link de referencia e ganhe de 1 a 2 tickets a cada novo cadastro.</p>
 
