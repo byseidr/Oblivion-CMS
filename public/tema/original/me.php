@@ -22,7 +22,7 @@ include 'header.php' ?>
 
                         </div>
                     </div>
-                    <div onclick="window.open(&#39;/<?php echo client ?>&#39;);" class="panel-footer client-btn">Entrar no
+                    <div onclick="window.open(&#39;/<?php echo client ?>&#39;, &#39;_self&#39;);" class="panel-footer client-btn">Entrar no
                         <?php echo nome ?>
                     </div>
 
