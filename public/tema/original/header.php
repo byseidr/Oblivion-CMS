@@ -299,7 +299,7 @@
                             
                         </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo url ?>/client" target="_blank"><i class="far fa-building"></i> Entrar no Hotel</a>
+                                    <a class="nav-link" href="<?php echo url ?>/<?php echo $_ENV['CLIENT_PATH'] ?>" target="_blank"><i class="far fa-building"></i> Entrar no Hotel</a>
                                 </li>
                             </ul>
                         </li>
