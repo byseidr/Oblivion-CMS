@@ -11,10 +11,10 @@
 */
 session_start();
 
-if (file_exists($_SERVER['DOCUMENT_ROOT'] . '../vendor/autoload.php')) {
-    require_once($_SERVER['DOCUMENT_ROOT'] . '../vendor/autoload.php');
+if (file_exists(dirname($_SERVER['DOCUMENT_ROOT']) . '/vendor/autoload.php')) {
+    require_once(dirname($_SERVER['DOCUMENT_ROOT']) . '/vendor/autoload.php');
 }
-$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'] . "..");
+$dotenv = Dotenv\Dotenv::createImmutable(dirname($_SERVER['DOCUMENT_ROOT']));
 $dotenv->load();
 
 Oblivion\Oblivion::init($dotenv);
