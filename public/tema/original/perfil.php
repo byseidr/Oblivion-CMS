@@ -252,7 +252,7 @@ while ($bss = $aa->fetch_assoc()) {
             </div>
 
             <div class="col-md-4">
-                <!-- a href="/<?php echo $_ENV['CLIENT_PATH'] ?>" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a  -->
+                <!-- a href="/<?php echo client ?>" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a  -->
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
