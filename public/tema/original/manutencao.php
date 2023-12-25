@@ -1,5 +1,5 @@
 <?php
-$titulo = "Manutenção temporária - ".nome."";
+$titulo = "Manutenção temporária - ".NOME."";
 include 'header-manutencao.php';
 ?>
 
@@ -12,7 +12,7 @@ include 'header-manutencao.php';
         </div>
         <div style="width: calc(100% - 50px); float: right">
             <h5 style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Ei, estamos em manutenção mas não fique triste. Voltaremos em breve.</h5>
-            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">Está ocorrendo uma manutenção temporária no Hotel e voltaremos em breve dando continuidade na diversão, enquanto isso curta nossa página no <a href="<?php echo facebook ?>">Facebook</a> e entre no nosso servidor do <a href="<?php echo discord ?>">Discord</a>.
+            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">Está ocorrendo uma manutenção temporária no Hotel e voltaremos em breve dando continuidade na diversão, enquanto isso curta nossa página no <a href="<?php echo FACEBOOK ?>">Facebook</a> e entre no nosso servidor do <a href="<?php echo DISCORD ?>">Discord</a>.
                 <br>
                 </div>
         </div>
@@ -30,7 +30,7 @@ include 'header-manutencao.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
                                                     </span>
         </div>

@@ -1,7 +1,7 @@
 <?php
-$titulo = "".usuario.":  Configurações - ".nome."";
+$titulo = "".USUARIO.":  Configurações - ".NOME."";
 include 'header.php';
- $sql3 = "SELECT * FROM users WHERE username='" . usuario . "'";
+ $sql3 = "SELECT * FROM users WHERE username='" . USUARIO . "'";
     $query1 = $db->query($sql3) or die($db->error());
     while ($row2 = $query1->fetch_assoc()) {
        $missao = $row2['motto']; 
@@ -18,7 +18,7 @@ include 'header.php';
                     <div class="list-group-item list-header">Sobre</div>
                     <div class="list-group-item config-controller open" data-target="#config">
                         Hey
-                        <?php echo usuario ?>, Nesta aba você pode alterar as configurações do seu Perfil. Sua missão e seu Discord ficarão públicos no seu perfil.
+                        <?php echo USUARIO ?>, Nesta aba você pode alterar as configurações do seu Perfil. Sua missão e seu Discord ficarão públicos no seu perfil.
                     </div>
 
                 </div>
@@ -81,7 +81,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
                                                     </span>
         </div>

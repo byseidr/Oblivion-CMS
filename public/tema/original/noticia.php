@@ -1,7 +1,7 @@
 <?php
 $vlsalsa = 0;
-if (is_numeric(noticiafinal))
-	$noticiafinal = noticiafinal;
+if (is_numeric(NOTICIAFINAL))
+	$noticiafinal = NOTICIAFINAL;
 else
 	$noticiafinal = 0;
 $qra        = "SELECT * FROM cms_news WHERE id=".$noticiafinal." LIMIT 1";
@@ -17,7 +17,7 @@ $query1 = $db->query($sql3) or die($db->error());
 while ($row3 = $query1->fetch_assoc()) {
 $fnsalsa = "UPDATE cms_news SET type = type+1 WHERE id = '" . $row3['id'] . "'";
 $db->query($fnsalsa); 
-$titulo = "".$row3['title']." - ".nome."";
+$titulo = "".$row3['title']." - ".NOME."";
 include 'header.php';
 ?>
 
@@ -111,7 +111,7 @@ while ($row22 = $query12->fetch_assoc()) {
                 </div>
 
                 <?php
-if (cur != null || sessao != null || usuario != null)
+if (CUR != null || SESSAO != null || USUARIO != null)
 {
     
     ?>
@@ -163,7 +163,7 @@ while ($bss = $aa->fetch_assoc()) {
                                     <ul class="list-group">
 
                                         <li class="list-group-item">
-                                            <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
+                                            <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                             <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>diz:</i>
                                             <?php echo fs($bss['mensagem']) ?>
 
@@ -205,7 +205,7 @@ while ($bss = $aa->fetch_assoc()) {
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
              
                                                     </span>
         </div>

@@ -19,24 +19,25 @@ $dotenv->load();
 
 Oblivion\Oblivion::init($dotenv);
 $db = new Oblivion\Db();
+Oblivion\Session::init($db);
 
 if ($_SERVER["REQUEST_URI"] == "/") header("Location: /index");
 if (isset($_GET['url'])) {
-    $arquivo = '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
+    $arquivo = '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . TEMA . '/' . $_GET['url'] . '.php';
     if (file_exists($arquivo)) {
-        if (manutencao == 1 && mns == 0) {
+        if (MANUTENCAO == 1 && MNS == 0) {
             if ($_SERVER["REQUEST_URI"] != "/manutencao") {
                 header("Location: /manutencao");
             } else {
-                include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/manutencao.php';
+                include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . TEMA . '/manutencao.php';
             }
-        } elseif (manutencao == 1 && mns == 1) {
-            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
+        } elseif (MANUTENCAO == 1 && MNS == 1) {
+            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . TEMA . '/' . $_GET['url'] . '.php';
         } else {
-            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_GET['url'] . '.php';
+            include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . TEMA . '/' . $_GET['url'] . '.php';
         }
     } else {
-        include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . tema . '/' . $_ENV['404PAGE'] . '.php';
+        include '' . $_SERVER['DOCUMENT_ROOT'] . '/tema/' . TEMA . '/' . $_ENV['404PAGE'] . '.php';
     }
 }
 

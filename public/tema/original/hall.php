@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Hall da Fama - ".nome."";
+$titulo = "".USUARIO.":  Hall da Fama - ".NOME."";
 include 'header.php';
 ?>
 
@@ -17,7 +17,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $row2['username'] ?>"><?php echo $row2['username'] ?></a></div>
                              <?php
@@ -57,7 +57,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $row2['username'] ?>"><?php echo $row2['username'] ?></a></div>
                             <?php
@@ -96,7 +96,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $row2['username'] ?>"><?php echo $row2['username'] ?></a></div>
                              <?php
@@ -135,7 +135,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $row2['username'] ?>"><?php echo $row2['username'] ?></a></div>
                              <?php
@@ -182,7 +182,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $row2['username'] ?>"><?php echo $row2['username'] ?></a></div>
                              <?php
@@ -243,7 +243,7 @@ include 'header.php';
         ?>
 
                                     <div class="list-group-item feed-item" style="padding-bottom: 0px">
-                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo avatarimage ?><?php echo $h4['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
+                        <div class="feed-item-image" style="height: 60px; background-image: url(<?php echo AVATARIMAGE ?><?php echo $h4['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml)"></div>
                         <div class="feed-item-body">
                             <div class="feed-item-title"><a href="/perfil?=<?php echo $h4['username'] ?>"><?php echo $h4['username'] ?></a></div>
                             
@@ -317,7 +317,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
                                                     </span>
         </div>

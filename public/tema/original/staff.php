@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Equipe - ".nome."";
+$titulo = "".USUARIO.":  Equipe - ".NOME."";
 include 'header.php';
 ?>
 
@@ -28,7 +28,7 @@ include 'header.php';
                     <div class="card"  style="flex-direction: row; margin-bottom: 10px;">
                         <img src="x" style="display: none" onload="setCardColor(this)" crossorigin="">
 
-                        <div class="user-profile-image" style="background: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
+                        <div class="user-profile-image" style="background: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
                         <div class="user-profile-content">
                             <div style="font-weight: bold; font-size: 16px;margin-bottom: 5px" class="ng-binding">
                                 <a href="/perfil?=<?php echo $row2['username'] ?>" class="card-title username"><?php echo $row2['username'] ?></a>
@@ -79,7 +79,7 @@ include 'header.php';
                     <div class="card" style="flex-direction: row; margin-bottom: 10px;">
                         <img src="x" style="display: none" onload="setCardColor(this)" crossorigin="">
 
-                        <div class="user-profile-image" style="background: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
+                        <div class="user-profile-image" style="background: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
                         <div class="user-profile-content">
                             <div style="font-weight: bold; font-size: 16px;margin-bottom: 5px" class="ng-binding">
                                 <a href="/perfil?=<?php echo $row2['username'] ?>" class="card-title username"><?php echo $row2['username'] ?></a>
@@ -128,7 +128,7 @@ include 'header.php';
                     <div class="card" style="flex-direction: row; margin-bottom: 10px;">
                         <img src="x" style="display: none" onload="setCardColor(this)" crossorigin="">
 
-                        <div class="user-profile-image" style="background: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
+                        <div class="user-profile-image" style="background: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
                         <div class="user-profile-content">
                             <div style="font-weight: bold; font-size: 16px;margin-bottom: 5px" class="ng-binding">
                                 <a href="/perfil?=<?php echo $row2['username'] ?>" class="card-title username"><?php echo $row2['username'] ?></a>
@@ -181,7 +181,7 @@ include 'header.php';
                     <div class="card" style="flex-direction: row; margin-bottom: 10px;">
                         <img src="x" style="display: none" onload="setCardColor(this)" crossorigin="">
 
-                        <div class="user-profile-image" style="background: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
+                        <div class="user-profile-image" style="background: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
                         <div class="user-profile-content">
                             <div style="font-weight: bold; font-size: 16px;margin-bottom: 5px" class="ng-binding">
                                 <a href="/perfil?=<?php echo $row2['username'] ?>" class="card-title username"><?php echo $row2['username'] ?></a>
@@ -225,7 +225,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                
                                                     </span>
         </div>

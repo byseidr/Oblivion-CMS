@@ -35,45 +35,45 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/uRUsL19.png">
 
     <title>
-        <?php echo nome ?> - Criar um avatar</title>
+        <?php echo NOME ?> - Criar um avatar</title>
 
-    <meta name="keywords" content="<?php echo nome ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
+    <meta name="keywords" content="<?php echo NOME ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta name="robots" content="all">
     <meta name="Googlebot" content="index, follow">
 
     <meta property="image" content="">
     <meta property="description" content="">
 
-    <meta property="og:title" content="<?php echo nome ?> Hotel">
+    <meta property="og:title" content="<?php echo NOME ?> Hotel">
     <meta property="og:image" content="">
-    <meta property="og:description" content="<?php echo nome ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
+    <meta property="og:description" content="<?php echo NOME ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:type" content="game">
-    <meta property="og:url" content="<?php echo url ?>">
-    <meta property="og:site_name" content="<?php echo nome ?> Hotel">
+    <meta property="og:url" content="<?php echo URL ?>">
+    <meta property="og:site_name" content="<?php echo NOME ?> Hotel">
     <meta property="og:locale" content="pt_BR">
     <meta property="fb:app_id" content="-">
     <meta property="article:tag" content="quiz">
-    <meta property="article:author" content="<?php echo facebook ?>">
-    <meta property="article:publisher" content="<?php echo facebook ?>">
+    <meta property="article:author" content="<?php echo FACEBOOK ?>">
+    <meta property="article:publisher" content="<?php echo FACEBOOK ?>">
 
     <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="<?php echo nome ?> Hotel">
+    <meta name="twitter:title" content="<?php echo NOME ?> Hotel">
 
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/OneSignalSDK.js" async=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/OneSignalSDK.js" async=""></script>
 
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/OneSignalPageSDKES6.js" async=""></script>
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/animate.css">
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/OneSignalPageSDKES6.js" async=""></script>
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/animate.css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/all.css" rel="stylesheet" type="text/css">
     <?php include __DIR__ . '/styles.php'; ?>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular.min.js" type="text/javascript"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular-animate.min.js" type="text/javascript"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/jquery-3.4.1.min.js"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/api.js" async="" defer=""></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular-animate.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/jquery-3.4.1.min.js"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/api.js" async="" defer=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
     <script>
         function getCookie(cname) {
             var name = cname + "=";
@@ -314,7 +314,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="<?php echo url ?>/index">
+                    <a href="<?php echo URL ?>/index">
                         <div id="master-logo"></div>
                     </a>
                 </div>
@@ -347,10 +347,10 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item  active">
-                            <a class="nav-link" href="<?php echo url ?>/index">Início</a>
+                            <a class="nav-link" href="<?php echo URL ?>/index">Início</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<?php echo url ?>/registro">Registre-se</a>
+                            <a class="nav-link" href="<?php echo URL ?>/registro">Registre-se</a>
                         </li>
                         
                     </ul>
@@ -394,7 +394,7 @@
                                 <input type="email" name="email" class="form-control" id="email" required="">
                             </div>
 
-                            <?php if (captcha == 1)
+                            <?php if (CAPTCHA == 1)
                             {
                                 $salgcpa = rand(1000, 9000);
                                 ?>
@@ -425,7 +425,7 @@
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                </span>
         </div>
     </div>

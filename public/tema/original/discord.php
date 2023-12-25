@@ -1,5 +1,5 @@
 <?php
-$titulo = "Discord do Habbo Pirata - ".nome."";
+$titulo = "Discord do Habbo Pirata - ".NOME."";
 include 'header.php';
 ?>
 
@@ -178,7 +178,7 @@ form {
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                
                                                     </span>
         </div>

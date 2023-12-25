@@ -1,6 +1,6 @@
 
 <?php
-$titulo = "".usuario.":  Principal - ".nome."";
+$titulo = "".USUARIO.":  Principal - ".NOME."";
 include 'header.php' ?>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -22,8 +22,8 @@ include 'header.php' ?>
 
                         </div>
                     </div>
-                    <div onclick="window.open(&#39;/<?php echo client ?>&#39;, &#39;_self&#39;);" class="panel-footer client-btn">Entrar no
-                        <?php echo nome ?>
+                    <div onclick="window.open(&#39;/<?php echo CLIENT ?>&#39;, &#39;_self&#39;);" class="panel-footer client-btn">Entrar no
+                        <?php echo NOME ?>
                     </div>
 
 
@@ -47,7 +47,7 @@ include 'header.php' ?>
                             <li class="list-group-item feed-item clearfix">
                                 <form method="POST" class="ng-pristine ng-valid ng-valid-maxlength">
                                     
-                                    <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo roupa ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
+                                    <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo ROUPA ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                     <div class="feed-item-body">
                                         <div class="feed-item-title"></div>
                                         <div class="feed-item-content">
@@ -78,7 +78,7 @@ include 'header.php' ?>
 
                                 <li class="list-group-item feed-item animated fadeInDown ng-scope" ng-repeat="post in posts| orderBy:'-id' track by $index" style="">
                                     <div id="postIdPanel430745">
-                                        <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $row77['look'] ?>&size=m&headonly=0&head_direction=2&gesture=sml)"></div>
+                                        <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $row77['look'] ?>&size=m&headonly=0&head_direction=2&gesture=sml)"></div>
                                         <div class="feed-item-body">
                                             <div class="feed-item-timestamp ng-binding">
                                                 <?php echo date('d/m/Y', $row['data']) . ' às ' . date('H:i:s', $row['data']) ?> <a href="javascript:void(0);" ng-click="deletePost(post)" ng-show="post.userid == 7702964" title="Apagar Publicação" style="color: #f44336" class="ng-hide"><i class="fas fa-times-circle"></i></a></div>
@@ -120,7 +120,7 @@ include 'header.php' ?>
                                         }
                                         <?php
                                         $value = 'value="'.fs($row['id']).'"';
-                                        $value2 = 'value="'.fs(usuario).'"';
+                                        $value2 = 'value="'.fs(USUARIO).'"';
                                         $value3 = 'value="'.fs($row['curtidas']).'"';
                                         ?>
                                     </script>
@@ -208,35 +208,35 @@ include 'header.php' ?>
                                         <input type="hidden" id="sharePostId" value="">
                                         <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="margin-bottom: 10px" id="sharingContent" rows="1" ng-model="sharePost.message" ng-disabled="postingStatus === true"></textarea>
                                         <div class="emoji-list-long closed">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/cora.png" title=":cora:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/eita.png" title=":eita:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/sorriso.png" title=":sorriso:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/ok.png" title=":ok:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/suave.png" title=":suave:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/pdxa.png" title=":pdxa:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/uau.png" title=":uau:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/delicia.png" title=":delicia:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/vergonha.png" title=":vergonha:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/triste.png" title=":triste:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/xonado.png" title=":xonado:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/kkk.png" title=":kkk:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/zzz.png" title=":zzz:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/z.png" title=":z:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bravo.png" title=":bravo:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/hehehe.png" title=":hehehe:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/grr.png" title=":grr:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/hihihi.png" title=":hihihi:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/coco.png" title=":coco:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/coraq.png" title=":coraq:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/lgbtqia.png" title=":lgbtqia:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/sim.png" title=":sim:">
-                                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/nao.png" title=":nao:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/cora.png" title=":cora:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/eita.png" title=":eita:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/sorriso.png" title=":sorriso:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/ok.png" title=":ok:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/suave.png" title=":suave:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/pdxa.png" title=":pdxa:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/uau.png" title=":uau:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/delicia.png" title=":delicia:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/vergonha.png" title=":vergonha:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/triste.png" title=":triste:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/xonado.png" title=":xonado:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/kkk.png" title=":kkk:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/zzz.png" title=":zzz:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/z.png" title=":z:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bravo.png" title=":bravo:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/hehehe.png" title=":hehehe:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/grr.png" title=":grr:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/hihihi.png" title=":hihihi:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/coco.png" title=":coco:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/coraq.png" title=":coraq:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/lgbtqia.png" title=":lgbtqia:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/sim.png" title=":sim:">
+                                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/nao.png" title=":nao:">
                                         </div>
                                         <div class="list-group" style="padding-left: 10px">
                                             <div class="list-group-item feed-item" style="border-radius: 4px;">
-                                                <div class="feed-item-image" style="background-image: url(<?php echo url ?>/avatar//size=m&amp;headonly=1&amp;head_direction=3&amp;gesture=sml)"></div>
+                                                <div class="feed-item-image" style="background-image: url(<?php echo URL ?>/avatar//size=m&amp;headonly=1&amp;head_direction=3&amp;gesture=sml)"></div>
                                                 <div class="feed-item-title">
-                                                    <a href="<?php echo url ?>/perfil/" class="ng-binding"></a>
+                                                    <a href="<?php echo URL ?>/perfil/" class="ng-binding"></a>
                                                 </div>
                                                 <div class="feed-item-content">
                                                     <div ng-bind-html="sharePost.content | trustAsHtml" class="ng-binding"></div>
@@ -265,7 +265,7 @@ include 'header.php' ?>
       while($row111 = $qaqa->fetch_assoc())
       {
         ?>
-                                <a href="<?php echo url ?>/noticia?=<?php echo $row111['id'] ?>" class="carousel-item active" style="background: url(<?php echo $row111['image'] ?>) center right no-repeat;height:186px;padding: 20px 15px;overflow:hidden">
+                                <a href="<?php echo URL ?>/noticia?=<?php echo $row111['id'] ?>" class="carousel-item active" style="background: url(<?php echo $row111['image'] ?>) center right no-repeat;height:186px;padding: 20px 15px;overflow:hidden">
                                     <span class="carousel-title"><?php echo $row111['title'] ?></span>
                                     <br>
                                     <span class="carousel-desc"><?php echo $row111['shortstory'] ?></span>
@@ -289,7 +289,7 @@ include 'header.php' ?>
       while($noticia = $gg->fetch_assoc())
       {
         ?>
-                    <a href="<?php echo url ?>/noticia?=<?php echo $noticia['id'] ?>" class="list-group-item list-group-item-action"><?php echo $noticia['title'] ?> »</a>
+                    <a href="<?php echo URL ?>/noticia?=<?php echo $noticia['id'] ?>" class="list-group-item list-group-item-action"><?php echo $noticia['title'] ?> »</a>
 
                 <?php } ?>
                   
@@ -361,14 +361,14 @@ include 'header.php' ?>
 
       <div class="list-group-item config-controller open" data-target="#config">
             
-        Você possui <b><?php echo referidos ?></b> referidos.<br>
+        Você possui <b><?php echo REFERIDOS ?></b> referidos.<br>
         
         <p>Chame novas pessoas para o hotel usando o seu link de referencia e ganhe de 1 a 2 tickets a cada novo cadastro.</p>
 
         <div class="form-group">
             <form class="ng-pristine ng-valid">
                 <small>Link de referencia:</small>
-                <input type="text" onclick="this.select();" class="form-control" value="<?php echo url ?>/convite?=<?php echo usuario ?>" readonly="readonly"> 
+                <input type="text" onclick="this.select();" class="form-control" value="<?php echo URL ?>/convite?=<?php echo USUARIO ?>" readonly="readonly"> 
             </form>
         </div>
 
@@ -386,7 +386,7 @@ include 'header.php' ?>
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
              
                                                     </span>
                                             </div>

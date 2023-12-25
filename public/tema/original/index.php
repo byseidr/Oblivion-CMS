@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="https://images.habbo.com/habbo-web/america/pt/assets/images/favicon.08c747be.ico">
 
     
-     <title><?php echo nome ?> - Servidor Habbo Pirata Grátis 2020</title>
+     <title><?php echo NOME ?> - Servidor Habbo Pirata Grátis 2020</title>
      
      
     <meta name="robots" content="all">
@@ -58,36 +58,36 @@
     <meta property="image" content="https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_74.png">
     <meta property="description" content="Faça o seu check-in no maior Hotel virtual do mundo DE GRAÇA! Você poderá fazer novos amigos, jogar e criar seus próprios jogos, bater papo, construir seus quartos e muito mais!">
 
-    <meta property="og:title" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
+    <meta property="og:title" content="<?php echo NOME ?>:  Faça amigos, divirta-se e seja famoso!">
     <meta property="og:image" content="https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_74.png">
     <meta property="og:description" content="Faça o seu check-in no maior Hotel virtual do mundo DE GRAÇA! Você poderá fazer novos amigos, jogar e criar seus próprios jogos, bater papo, construir seus quartos e muito mais!">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:type" content="game">
-    <meta property="og:url" content="<?php echo url ?>">
-    <meta property="og:site_name" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
+    <meta property="og:url" content="<?php echo URL ?>">
+    <meta property="og:site_name" content="<?php echo NOME ?>:  Faça amigos, divirta-se e seja famoso!">
     <meta property="og:locale" content="pt_BR">
     <meta property="fb:app_id" content="-">
     <meta property="article:tag" content="quiz">
-    <meta property="article:author" content="<?php echo facebook ?>">
-    <meta property="article:publisher" content="<?php echo facebook ?>">
+    <meta property="article:author" content="<?php echo FACEBOOK ?>">
+    <meta property="article:publisher" content="<?php echo FACEBOOK ?>">
 
     <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
+    <meta name="twitter:title" content="<?php echo NOME ?>:  Faça amigos, divirta-se e seja famoso!">
 
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/OneSignalSDK.js" async=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/OneSignalSDK.js" async=""></script>
 
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/OneSignalPageSDKES6.js" async=""></script>
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/animate.css">
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/OneSignalPageSDKES6.js" async=""></script>
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/animate.css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/all.css" rel="stylesheet" type="text/css">
     <?php include __DIR__ . '/styles.php'; ?>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular.min.js" type="text/javascript"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular-animate.min.js" type="text/javascript"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/jquery-3.4.1.min.js"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/api.js" async="" defer=""></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular-animate.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/jquery-3.4.1.min.js"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/api.js" async="" defer=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
     <script>
         function getCookie(cname) {
             var name = cname + "=";
@@ -328,7 +328,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="<?php echo url ?>/index">
+                    <a href="<?php echo URL ?>/index">
                         <div id="master-logo"></div>
                     </a>
                 </div>
@@ -361,10 +361,10 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item  active">
-                            <a class="nav-link" href="<?php echo url ?>/index">Início</a>
+                            <a class="nav-link" href="<?php echo URL ?>/index">Início</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<?php echo url ?>/registro">Registre-se</a>
+                            <a class="nav-link" href="<?php echo URL ?>/registro">Registre-se</a>
                         </li>
                         
                     </ul>
@@ -375,7 +375,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Seja bem-vind@ ao <?php echo nome ?>!</h3>
+                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Seja bem-vind@ ao <?php echo NOME ?>!</h3>
                 <h5 style="color: #a7a7a7;margin-bottom:30px">Crie sua conta, construa quartos, converse e faça novos amigos!</h5>
             </div>
             <div class="col-md-4">
@@ -438,11 +438,11 @@
                                 <i class="fa fa-check-circle" aria-hidden="true"></i> Vagas na equipe!
                                 <br>
                             </div>
-                            <img src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/wUAZubl.gif" style="position: absolute; right: -15px;bottom: -6px;">
+                            <img src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/wUAZubl.gif" style="position: absolute; right: -15px;bottom: -6px;">
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a href="<?php echo url ?>/registro" class="btn btn-primary btn-lg btn-block" style="color: #fff; margin-top: 8px;">
+                        <a href="<?php echo URL ?>/registro" class="btn btn-primary btn-lg btn-block" style="color: #fff; margin-top: 8px;">
                         O que está esperando?
                         <h3 style="margin:0;padding:0; color: #fff;font-weight: bold;">CRIE SUA CONTA!</h3>
                     </a>
@@ -462,7 +462,7 @@
       {
         ?>
             <div class="col-md-3">
-                <a href="<?php echo url ?>/noticia?=<?php echo $row['id'] ?>">
+                <a href="<?php echo URL ?>/noticia?=<?php echo $row['id'] ?>">
                     <div class="card" style="height: 84px;margin-bottom: 20px; background: url(<?php echo $row['image'] ?>) center left">
                         <div class="card-body" style="padding: 10px 8px;">
                             <span style="font-weight: bold;font-size: 14px; color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.5)"><?php echo $row['title'] ?></span>
@@ -489,7 +489,7 @@
                 
                 
                 
-            © 2019 - <?php echo ano ?> Habbo Pirata <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Habbo Pirata <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                </span>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Erro - ".nome."";
+$titulo = "".USUARIO.":  Erro - ".NOME."";
 include 'header.php';
 ?>
 
@@ -30,7 +30,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
                                                     </span>
         </div>

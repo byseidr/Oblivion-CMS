@@ -5,14 +5,14 @@
     }
     
     #master-topbg {
-        background: url(<?php echo topo ?>) center;
+        background: url(<?php echo TOPO ?>) center;
         height: 80px;
     }
     
     #master-logo {
         height: 80px;
         width: 191px;
-        background: url(<?php echo logo ?>) right center no-repeat;
+        background: url(<?php echo LOGO ?>) right center no-repeat;
     }
     
     #master-logo:hover {
@@ -25,7 +25,7 @@
     }
     
     #me-top-profile {
-        background: url(https://habbo.city/habbo-imaging/avatarimage?figure=<?php echo roupa ?>&size=b&direction=2&head_direction=3&gesture=sml&action=wav&size=l) no-repeat center -40px, url(https://1.bp.blogspot.com/-qpavAM5uHiQ/Vt5BfOReKqI/AAAAAAAAkUU/T2GI3XqzWWc/s1600/wallpaper_bigWave.png) right bottom;
+        background: url(https://habbo.city/habbo-imaging/avatarimage?figure=<?php echo ROUPA ?>&size=b&direction=2&head_direction=3&gesture=sml&action=wav&size=l) no-repeat center -40px, url(https://1.bp.blogspot.com/-qpavAM5uHiQ/Vt5BfOReKqI/AAAAAAAAkUU/T2GI3XqzWWc/s1600/wallpaper_bigWave.png) right bottom;
         border: none;
         padding: 0px;
         border-top-left-radius: 4px;

@@ -39,7 +39,7 @@
       <?php echo $titulo ?>
     </title>
 
-    <meta name="keywords" content="<?php echo nome ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
+    <meta name="keywords" content="<?php echo NOME ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta name="robots" content="all">
     <meta name="Googlebot" content="index, follow">
     <meta property="image" content="">
@@ -49,30 +49,30 @@
     <meta property="og:description" content="<?php echo $titulo ?>">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:type" content="game">
-    <meta property="og:url" content="<?php echo url ?>">
-    <meta property="og:site_name" content="<?php echo nome ?> Hotel">
+    <meta property="og:url" content="<?php echo URL ?>">
+    <meta property="og:site_name" content="<?php echo NOME ?> Hotel">
     <meta property="og:locale" content="pt_BR">
     <meta property="fb:app_id" content="0">
     <meta property="article:tag" content="quiz">
-    <meta property="article:author" content="<?php echo url ?>">
-    <meta property="article:publisher" content="<?php echo url ?>">
+    <meta property="article:author" content="<?php echo URL ?>">
+    <meta property="article:publisher" content="<?php echo URL ?>">
     <meta name="twitter:card" content="photo">
     <meta name="twitter:title" content="<?php echo $titulo ?>">
 
    
 
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/animate.css">
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/animate.css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/all.css" rel="stylesheet" type="text/css">
     <?php include __DIR__ . '/styles.php'; ?>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular.min.js" type="text/javascript"></script>
     
     
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/jquery-3.4.1.min.js"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/api.js" async="" defer=""></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/jquery-3.4.1.min.js"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/api.js" async="" defer=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
         function salsalikes {
@@ -128,8 +128,8 @@
             border: 1px solid #449EFB;
         }
     </style>
-    <script charset="utf-8" src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/moment_timeline_tweet.a1aa0f6410f7eaada23e6b16a38824b8.js"></script>
-    <script charset="utf-8" src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/timeline.f7ace10bb00711bb451dd36523152463.js"></script>
+    <script charset="utf-8" src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/moment_timeline_tweet.a1aa0f6410f7eaada23e6b16a38824b8.js"></script>
+    <script charset="utf-8" src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/timeline.f7ace10bb00711bb451dd36523152463.js"></script>
     <style type="text/css">
         #maxthon-1eec22d4-0232-4212-8283-6f2ac8f967-iframe {
             display: block!important;
@@ -171,7 +171,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="<?php echo url ?>/index">
+                    <a href="<?php echo URL ?>/index">
                         <div id="master-logo"></div>
                     </a>
                 </div>
@@ -204,44 +204,44 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo URL ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user"></i>
-                                <?php echo cur ?>
+                                <?php echo CUR ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/me">Página Inicial</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/perfil?=<?php echo usuario ?>">Meu perfil</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/configs">Configurações</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/me">Página Inicial</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/perfil?=<?php echo USUARIO ?>">Meu perfil</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/configs">Configurações</a>
                                 <div class="dropdown-divider"></div>
                                  <?php
-                                if (rank >= rmin)
+                                if (RANK >= RMIN)
                                 {
                                     ?>
                                 
 
-                         <a class="dropdown-item" href="<?php echo url ?>/panel">Painel de Controle</a>
+                         <a class="dropdown-item" href="<?php echo URL ?>/panel">Painel de Controle</a>
                             <?php } ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/sair">Sair</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/sair">Sair</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo URL ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-plus"></i> Comunidade
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipe</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/teams">Colaboradores</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/staff">Equipe</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/teams">Colaboradores</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/vips">Usuários VIPs</a>
                                 <div class="dropdown-divider"></div>
                                 
-                                <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/discord">Discord</a>
                              
                             </div>
                         </li>
                         
                         
                           <li class="nav-item">
-                            <a class="nav-link" href="<?php echo url ?>/hall" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="<?php echo URL ?>/hall" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-star"></i> Hall
                             </a>
                             
@@ -255,7 +255,7 @@
                         
                         
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo URL ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-newspaper"></i> Jornalismo
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -263,23 +263,23 @@
                                 $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
                                 $query2 = $db->query($sql4) or die($db->error());
                                 while ($row4 = $query2->fetch_assoc()) { ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
 
                             <?php } ?>
 
-                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Promoções ativas</a>
+                             <a class="dropdown-item" href="<?php echo URL ?>/promocoes">Promoções ativas</a>
                               
                             </div>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo URL ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-gem"></i> Loja
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/store">Produtos</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/store">Produtos</a>
                                 <div class="dropdown-divider"></div>
                                 
-                                <a class="dropdown-item" href="<?php echo url ?>/vip">Conheça o VIP</a>
+                                <a class="dropdown-item" href="<?php echo URL ?>/vip">Conheça o VIP</a>
                             </div>
                         </li>
 
@@ -293,13 +293,13 @@
                                     </a>
                                 </li>
                                  <li class="nav-item">
-                            <a class="nav-link" href="<?php echo url ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="<?php echo URL ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-download"></i> Download APP
                             </a>
                             
                         </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo url ?>/<?php echo client ?>"><i class="far fa-building"></i> Entrar no Hotel</a>
+                                    <a class="nav-link" href="<?php echo URL ?>/<?php echo CLIENT ?>"><i class="far fa-building"></i> Entrar no Hotel</a>
                                 </li>
                             </ul>
                         </li>

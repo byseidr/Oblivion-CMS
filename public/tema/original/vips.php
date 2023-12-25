@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Usuários VIP - ".nome."";
+$titulo = "".USUARIO.":  Usuários VIP - ".NOME."";
 include 'header.php';
 ?>
 
@@ -12,7 +12,7 @@ include 'header.php';
         </div>
         <div style="width: calc(100% - 50px); float: right">
             <h5 style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Usuários VIPs</h5>
-            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">Alta sociedade do <?php echo nome ?> Hotel.</div>
+            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">Alta sociedade do <?php echo NOME ?> Hotel.</div>
         </div>
     </div>
             <div class="row">
@@ -26,7 +26,7 @@ include 'header.php';
                     <div class="card"  style="flex-direction: row; margin-bottom: 10px;">
                         <img src="x" style="display: none" onload="setCardColor(this)" crossorigin="">
 
-                        <div class="user-profile-image" style="background: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
+                        <div class="user-profile-image" style="background: url(<?php echo AVATARIMAGE ?><?php echo $row2['look'] ?>&size=m&amp;head_direction=2&amp;gesture=sml) 0px -5px, url(x) center"></div>
                         <div class="user-profile-content">
                             <div style="font-weight: bold; font-size: 16px;margin-bottom: 5px" class="ng-binding">
                                 <a href="/perfil?=<?php echo $row2['username'] ?>" class="card-title username"><?php echo $row2['username'] ?></a>
@@ -73,7 +73,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
                                                     </span>
         </div>

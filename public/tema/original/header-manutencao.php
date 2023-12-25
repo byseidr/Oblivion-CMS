@@ -37,7 +37,7 @@
       <?php echo $titulo ?>
     </title>
 
-    <meta name="keywords" content="<?php echo nome ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
+    <meta name="keywords" content="<?php echo NOME ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta name="robots" content="all">
     <meta name="Googlebot" content="index, follow">
     <meta property="image" content="">
@@ -47,30 +47,30 @@
     <meta property="og:description" content="<?php echo $titulo ?>">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:type" content="game">
-    <meta property="og:url" content="<?php echo url ?>">
-    <meta property="og:site_name" content="<?php echo nome ?> Hotel">
+    <meta property="og:url" content="<?php echo URL ?>">
+    <meta property="og:site_name" content="<?php echo NOME ?> Hotel">
     <meta property="og:locale" content="pt_BR">
     <meta property="fb:app_id" content="0">
     <meta property="article:tag" content="quiz">
-    <meta property="article:author" content="<?php echo url ?>">
-    <meta property="article:publisher" content="<?php echo url ?>">
+    <meta property="article:author" content="<?php echo URL ?>">
+    <meta property="article:publisher" content="<?php echo URL ?>">
     <meta name="twitter:card" content="photo">
     <meta name="twitter:title" content="<?php echo $titulo ?>">
 
    
 
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/animate.css">
-    <link href="<?php echo url ?>/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/animate.css">
+    <link href="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/all.css" rel="stylesheet" type="text/css">
     <?php include __DIR__ . '/styles.php'; ?>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/angular.min.js" type="text/javascript"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/angular.min.js" type="text/javascript"></script>
     
     
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/jquery-3.4.1.min.js"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/api.js" async="" defer=""></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
-    <script src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/jquery-3.4.1.min.js"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/api.js" async="" defer=""></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/bootstrap.min.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
         function salsalikes {
@@ -126,8 +126,8 @@
             border: 1px solid #449EFB;
         }
     </style>
-    <script charset="utf-8" src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/moment_timeline_tweet.a1aa0f6410f7eaada23e6b16a38824b8.js"></script>
-    <script charset="utf-8" src="<?php echo url ?>/tema/<?php echo tema ?>/css_files/timeline.f7ace10bb00711bb451dd36523152463.js"></script>
+    <script charset="utf-8" src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/moment_timeline_tweet.a1aa0f6410f7eaada23e6b16a38824b8.js"></script>
+    <script charset="utf-8" src="<?php echo URL ?>/tema/<?php echo TEMA ?>/css_files/timeline.f7ace10bb00711bb451dd36523152463.js"></script>
     <style type="text/css">
         #maxthon-1eec22d4-0232-4212-8283-6f2ac8f967-iframe {
             display: block!important;
@@ -169,7 +169,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="<?php echo url ?>/index">
+                    <a href="<?php echo URL ?>/index">
                         <div id="master-logo"></div>
                     </a>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 $vlsalsa = 0;
-$qra        = "SELECT * FROM users WHERE username='".noticiafinal."' order by id DESC LIMIT 1";
+$qra        = "SELECT * FROM users WHERE username='".NOTICIAFINAL."' order by id DESC LIMIT 1";
 if ($ra = $db->query($qra)) {
 $existe = mysqli_num_rows($ra);
 if ($existe == $vlsalsa) {
@@ -8,10 +8,10 @@ header("Location: /".$_ENV['404PAGE']."");
 }
 mysqli_free_result($ra);
 }
-$sql3 = "SELECT * FROM users WHERE username='".noticiafinal."' order by id DESC LIMIT 1";
+$sql3 = "SELECT * FROM users WHERE username='".NOTICIAFINAL."' order by id DESC LIMIT 1";
 $query1 = $db->query($sql3) or die($db->error());
 while ($row3 = $query1->fetch_assoc()) {
-$titulo = "Perfil de ".$row3['username']." - ".nome."";
+$titulo = "Perfil de ".$row3['username']." - ".NOME."";
 include 'header.php';
 ?>
 
@@ -28,7 +28,7 @@ include 'header.php';
                                 <div class="media">
 
                                     <div class="media-left media-middle">
-                                        <div style="background-image: url(<?php echo avatarimage ?><?php echo $row3['look'] ?>&amp;size=m&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;size=l); background-position:  -50px; width:60px; height:80px;">
+                                        <div style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $row3['look'] ?>&amp;size=m&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;size=l); background-position:  -50px; width:60px; height:80px;">
 
                                         </div>
 
@@ -148,7 +148,7 @@ include 'header.php';
                     </div>
 
                     <?php
-if (cur != null || sessao != null || usuario != null)
+if (CUR != null || SESSAO != null || USUARIO != null)
 {
     
     ?>
@@ -195,7 +195,7 @@ if (cur != null || sessao != null || usuario != null)
                                         <form method="post">
                                             Deseja realmente mandar uma solicitação de amizade para <?php echo $row3['username'] ?>?
                                             <input value="<?php echo $row3['id'] ?>" type="text" name="id" hidden="">
-                                            <input value="<?php echo id ?>" type="text" name="id_dois" hidden="">
+                                            <input value="<?php echo ID ?>" type="text" name="id_dois" hidden="">
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -227,7 +227,7 @@ while ($bss = $aa->fetch_assoc()) {
                                     <ul class="list-group">
 
                                         <li class="list-group-item">
-                                            <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
+                                            <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                             <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>diz:</i>
                                             <?php echo fs($bss['mensagem']) ?>
 
@@ -252,7 +252,7 @@ while ($bss = $aa->fetch_assoc()) {
             </div>
 
             <div class="col-md-4">
-                <!-- a href="/<?php echo client ?>" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a  -->
+                <!-- a href="/<?php echo CLIENT ?>" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a  -->
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -374,7 +374,7 @@ while ($bss = $aa->fetch_assoc()) {
                     while ($ba = $ca->fetch_assoc()) {
                         ?>
 
-                            <img src="<?php echo urlemblemas ?><?php echo $ba['badge_code'] ?>.gif">
+                            <img src="<?php echo URLEMBLEMAS ?><?php echo $ba['badge_code'] ?>.gif">
                             <?php } ?>
                     </div>
                 </div>
@@ -385,7 +385,7 @@ while ($bss = $aa->fetch_assoc()) {
                 </div>
                 <div class="list-group-item config-controller open" data-target="#config">
 <?php
-if (cur != null || sessao != null || usuario != null)
+if (CUR != null || SESSAO != null || USUARIO != null)
 {
     
     ?>
@@ -404,7 +404,7 @@ if (cur != null || sessao != null || usuario != null)
 
                     <br>
 
-                    <?php if (id != $row3['id'])
+                    <?php if (ID != $row3['id'])
                     {
                         ?>
                       <button type="button" data-toggle="modal" data-target="#Amizade" class="btn btn-primary">
@@ -459,7 +459,7 @@ if (cur != null || sessao != null || usuario != null)
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                
                                                     </span>
         </div>

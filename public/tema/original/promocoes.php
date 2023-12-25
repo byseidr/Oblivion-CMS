@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Promoções ativas - ".nome."";
+$titulo = "".USUARIO.":  Promoções ativas - ".NOME."";
 include 'header.php';
 ?>
 
@@ -23,7 +23,7 @@ include 'header.php';
         {
             ?>
             <div class="col-md-5">
-                <a href="<?php echo url ?>/noticia?=<?php echo $row['id'] ?>">
+                <a href="<?php echo URL ?>/noticia?=<?php echo $row['id'] ?>">
                     <div class="card" style="height: 84px;margin-bottom: 20px; background: url(<?php echo $row['image'] ?>) center left">
                         <div class="card-body" style="padding: 10px 8px;">
                             <span style="font-weight: bold;font-size: 14px; color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.5)"><?php echo $row['title'] ?></span>
@@ -72,7 +72,7 @@ include 'header.php';
         <div class="container">
 
             <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
+            © 2019 - <?php echo ANO ?> Rede <?php echo NOME ?> Corporation Ltd. Todos os direitos reservados.
                
                                                     </span>
         </div>
