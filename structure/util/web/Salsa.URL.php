@@ -18,6 +18,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(dirname($_SERVER['DOCUMENT_ROOT']));
 $dotenv->load();
 
 Oblivion\Oblivion::init($dotenv);
+$db = new Oblivion\Db();
 
 if ($_SERVER["REQUEST_URI"] == "/") header("Location: /index");
 if (isset($_GET['url'])) {

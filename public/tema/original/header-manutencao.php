@@ -177,7 +177,7 @@
                     <div class="pull-right">
                         <div style="float:right; margin-top: 10px; padding:10px; text-align: center; background-color: #fff; border-radius: 5px;">
                             <div style="padding: 6px; width: 60px;  line-height: 80%;">
-                                <span class="onlineUsersNumber ng-binding"><?php Oblivion\Data::usuarios_online() ?></span>
+                                <span class="onlineUsersNumber ng-binding"><?php Oblivion\Data::usuarios_online($db) ?></span>
                                 <small ng-show="usersOnStatus !== 0" class="" style="">
                                 <i ng-show="usersOnStatus &gt; 0" style="color:#459b4a" class="fas fa-level-up ng-hide" aria-hidden="true"></i>
                                 <i ng-show="usersOnStatus &lt; 0" style="color:#c43c3c" class="fas fa-level-down ng-hide" aria-hidden="true"></i>
@@ -269,7 +269,7 @@
             </div>
         </div>
     </div>
-    <?php Oblivion\Account::conectar();
+    <?php Oblivion\Account::conectar($db);
     if (isset($_SESSION['erro'])){
     echo $_SESSION['erro'];
     unset($_SESSION['erro']);

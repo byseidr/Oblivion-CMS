@@ -9,7 +9,7 @@ include 'header.php';
             <div class="row">
                 
                                 <div class="col-md-6">
-                                    <?php Oblivion\Account::comprarpontos() ?>
+                                    <?php Oblivion\Account::comprarpontos($db) ?>
                     <ul class="list-group" style="margin-bottom: 20px">
                         <li class="list-group-item" style="height: 100px; background: url(https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_79.png) center no-repeat">
                                                     </li>

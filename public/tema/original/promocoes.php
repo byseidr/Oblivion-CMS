@@ -15,7 +15,7 @@ include 'header.php';
 
                      <?php
                             $sql = "SELECT * FROM cms_news order by id DESC LIMIT 20";
-      $query = Oblivion\Db::query($sql) or die(Oblivion\Db::error());
+      $query = $db->query($sql) or die($db->error());
       while($row = $query->fetch_assoc())
       {
         ?>

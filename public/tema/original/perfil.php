@@ -1,7 +1,7 @@
 <?php
 $vlsalsa = 0;
 $qra        = "SELECT * FROM users WHERE username='".noticiafinal."' order by id DESC LIMIT 1";
-if ($ra = Oblivion\Db::query($qra)) {
+if ($ra = $db->query($qra)) {
 $existe = mysqli_num_rows($ra);
 if ($existe == $vlsalsa) {
 header("Location: /".$_ENV['404PAGE']."");
@@ -9,7 +9,7 @@ header("Location: /".$_ENV['404PAGE']."");
 mysqli_free_result($ra);
 }
 $sql3 = "SELECT * FROM users WHERE username='".noticiafinal."' order by id DESC LIMIT 1";
-$query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
+$query1 = $db->query($sql3) or die($db->error());
 while ($row3 = $query1->fetch_assoc()) {
 $titulo = "Perfil de ".$row3['username']." - ".nome."";
 include 'header.php';
@@ -153,7 +153,7 @@ if (cur != null || sessao != null || usuario != null)
     
     ?>
 
-                    <?php Oblivion\Account::recado(); Oblivion\Account::adicionar_amigo()  ?>
+                    <?php Oblivion\Account::recado($db); Oblivion\Account::adicionar_amigo($db)  ?>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -220,7 +220,7 @@ if (cur != null || sessao != null || usuario != null)
 
                                 <?php
     $sql31 = "SELECT * FROM salsa_postagens WHERE donoperfil='".$row3['username']."' order by id DESC LIMIT 20";
-$aa = Oblivion\Db::query($sql31) or die(Oblivion\Db::error());
+$aa = $db->query($sql31) or die($db->error());
 while ($bss = $aa->fetch_assoc()) {
     ?>
 
@@ -345,7 +345,7 @@ while ($bss = $aa->fetch_assoc()) {
                                                         <?php
                     $idnovo = $row3['id'];
                     $a = "SELECT * FROM users_currency WHERE user_id='$idnovo' and type='5'";
-                    $c = Oblivion\Db::query($a) or die(Oblivion\Db::error());
+                    $c = $db->query($a) or die($db->error());
                     while ($b = $c->fetch_assoc()) {
                         ?>
                                                             <!-- 001 -->
@@ -370,7 +370,7 @@ while ($bss = $aa->fetch_assoc()) {
                         <?php
                     $idnovo = $row3['id'];
                     $as = "SELECT * FROM users_badges WHERE user_id='$idnovo'";
-                    $ca = Oblivion\Db::query($as) or die(Oblivion\Db::error());
+                    $ca = $db->query($as) or die($db->error());
                     while ($ba = $ca->fetch_assoc()) {
                         ?>
 
@@ -392,7 +392,7 @@ if (cur != null || sessao != null || usuario != null)
                     <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">
                         Deixar um recado <span class="badge badge-light"><?php
   $sql="SELECT * FROM salsa_postagens WHERE donoperfil='".$row3['username']."' order by id";
-  if ($result=Oblivion\Db::query($sql))
+  if ($result=$db->query($sql))
   {
   $rowcount=mysqli_num_rows($result);
   printf("%d\n",$rowcount);

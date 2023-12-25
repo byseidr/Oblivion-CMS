@@ -29,7 +29,7 @@ include 'header.php' ?>
 
                 </div>
                
-                <?php Oblivion\Account::publicar(); Oblivion\Account::curtir() ?>
+                <?php Oblivion\Account::publicar($db); Oblivion\Account::curtir($db) ?>
                  <?php
                         if (isset($_SESSION['erro']))
                         {
@@ -66,11 +66,11 @@ include 'header.php' ?>
 
                             <?php
                             $sql = "SELECT * FROM salsa_posts order by id DESC LIMIT 20";
-      $query = Oblivion\Db::query($sql) or die(Oblivion\Db::error());
+      $query = $db->query($sql) or die($db->error());
       while($row = $query->fetch_assoc())
       {
          $nova = "SELECT * FROM users WHERE username='".$row['usuario']."'";
-        $qrm = Oblivion\Db::query($nova) or die(Oblivion\Db::error());
+        $qrm = $db->query($nova) or die($db->error());
         while($row77 = $qrm->fetch_assoc())
         {
             
@@ -261,7 +261,7 @@ include 'header.php' ?>
                             <div class="carousel-inner">
                                   <?php
                             $sql = "SELECT * FROM cms_news order by id DESC LIMIT 1";
-      $qaqa = Oblivion\Db::query($sql) or die(Oblivion\Db::error());
+      $qaqa = $db->query($sql) or die($db->error());
       while($row111 = $qaqa->fetch_assoc())
       {
         ?>
@@ -285,7 +285,7 @@ include 'header.php' ?>
                     </div>
                        <?php
                             $a = "SELECT * FROM cms_news order by id DESC LIMIT 6";
-      $gg = Oblivion\Db::query($a) or die(Oblivion\Db::error());
+      $gg = $db->query($a) or die($db->error());
       while($noticia = $gg->fetch_assoc())
       {
         ?>
@@ -307,7 +307,7 @@ include 'header.php' ?>
                         
                       <?php
       $aBC = "SELECT * FROM users order by credits DESC LIMIT 6";
-      $QQ = Oblivion\Db::query($aBC) or die(Oblivion\Db::error());
+      $QQ = $db->query($aBC) or die($db->error());
       while($MOEDAS = $QQ->fetch_assoc())
       {
         ?>

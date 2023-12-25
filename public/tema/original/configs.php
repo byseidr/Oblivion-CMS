@@ -2,7 +2,7 @@
 $titulo = "".usuario.":  Configurações - ".nome."";
 include 'header.php';
  $sql3 = "SELECT * FROM users WHERE username='" . usuario . "'";
-    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
+    $query1 = $db->query($sql3) or die($db->error());
     while ($row2 = $query1->fetch_assoc()) {
        $missao = $row2['motto']; 
        $email = $row2['mail'];
@@ -28,7 +28,7 @@ include 'header.php';
                     <div class="alert alert-primary" role="alert">
                     <?php 
 
-                Oblivion\Account::configuracoes();
+                Oblivion\Account::configuracoes($db);
                 if (isset($_SESSION['erro']))
                         {
                             echo $_SESSION['erro'];
