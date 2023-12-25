@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfd1ffa98a4b4e440d0b58a513481e59",
+    "content-hash": "6438cfdf1081049d2092406c2e21353c",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -145,16 +145,16 @@
         },
         {
             "name": "seidr/oblivion-bridge",
-            "version": "v6.0.1",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/byseidr/Oblivion-Bridge.git",
-                "reference": "ad8b27e75885906361ce9b4662f7ec077d73d766"
+                "reference": "92ab4cf498b86673bd16e59242e08eb7388a1150"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/byseidr/Oblivion-Bridge/zipball/ad8b27e75885906361ce9b4662f7ec077d73d766",
-                "reference": "ad8b27e75885906361ce9b4662f7ec077d73d766",
+                "url": "https://api.github.com/repos/byseidr/Oblivion-Bridge/zipball/92ab4cf498b86673bd16e59242e08eb7388a1150",
+                "reference": "92ab4cf498b86673bd16e59242e08eb7388a1150",
                 "shasum": ""
             },
             "type": "library",
@@ -176,9 +176,9 @@
             "description": "Helper functions that connect the Oblivion database to its different clients.",
             "support": {
                 "issues": "https://github.com/byseidr/Oblivion-Bridge/issues",
-                "source": "https://github.com/byseidr/Oblivion-Bridge/tree/v6.0.1"
+                "source": "https://github.com/byseidr/Oblivion-Bridge/tree/v6.1.0"
             },
-            "time": "2023-12-25T18:41:00+00:00"
+            "time": "2023-12-25T21:08:23+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
