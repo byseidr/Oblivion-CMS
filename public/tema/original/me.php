@@ -101,7 +101,7 @@ include 'header.php' ?>
                                             <div class="more-block ng-binding" ng-bind-html="post.content | trustAsHtml">
                                                 <p>
 
-<?php echo fs($row['postagem']) ?>
+<?php echo Oblivion\Filter::fs($row['postagem']) ?>
 </p>
 
                                                 </div>
@@ -119,9 +119,9 @@ include 'header.php' ?>
                                             document.getElementById("contasalsa<?php echo $row['id'] ?>").innerHTML = resultado;
                                         }
                                         <?php
-                                        $value = 'value="'.fs($row['id']).'"';
-                                        $value2 = 'value="'.fs(USUARIO).'"';
-                                        $value3 = 'value="'.fs($row['curtidas']).'"';
+                                        $value = 'value="'.Oblivion\Filter::fs($row['id']).'"';
+                                        $value2 = 'value="'.Oblivion\Filter::fs(USUARIO).'"';
+                                        $value3 = 'value="'.Oblivion\Filter::fs($row['curtidas']).'"';
                                         ?>
                                     </script>
 

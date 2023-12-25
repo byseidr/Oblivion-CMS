@@ -165,7 +165,7 @@ while ($bss = $aa->fetch_assoc()) {
                                         <li class="list-group-item">
                                             <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                             <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>diz:</i>
-                                            <?php echo fs($bss['mensagem']) ?>
+                                            <?php echo Oblivion\Filter::fs($bss['mensagem']) ?>
 
                                                 <div id="salsdiv" style="float: right;">
                                                     <img src="https://3.bp.blogspot.com/-QiV0Aie6aMg/WV-zzO36oGI/AAAAAAAA6uo/u--AGzg3gKAHlV7YUlHB5tznf368sOQxgCKgBGAs/s1600/34df39e387de73745fd1dabcba970a6e.gif">

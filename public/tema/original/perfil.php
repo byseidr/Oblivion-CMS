@@ -37,7 +37,7 @@ include 'header.php';
                                     <div class="media-body">
                                         <h4 class="media-heading" style="color: #fff; font-weight: bold;">
                                      <strong><?php echo $row3['username'] ?></strong>&nbsp;                                </h4>
-                                        <font color="white"><?php echo fs($row3['motto'])      ?>         </font>
+                                        <font color="white"><?php echo Oblivion\Filter::fs($row3['motto'])      ?>         </font>
                                         <p></p>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@ while ($bss = $aa->fetch_assoc()) {
                                         <li class="list-group-item">
                                             <div class="feed-item-image" style="background-image: url(<?php echo AVATARIMAGE ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                             <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>diz:</i>
-                                            <?php echo fs($bss['mensagem']) ?>
+                                            <?php echo Oblivion\Filter::fs($bss['mensagem']) ?>
 
                                                 <div id="salsdiv" style="float: right;">
                                                     <img src="https://4.bp.blogspot.com/-0CuMZcPJZXY/XZVaFhMCKAI/AAAAAAABWaU/U6Jas6B8_H0FdAEc1g1Vc59DxBOHc93FwCKgBGAsYHg/s1600/Icon214.png"> Postado em
@@ -307,7 +307,7 @@ while ($bss = $aa->fetch_assoc()) {
                                             <!-- 001 -->
                                             <img src="https://2.bp.blogspot.com/-xRvHc6jTz-g/XZVaFhr9eNI/AAAAAAABWaU/PtGdLf-yZ2AnHDoRDtRs-vN0Wm680fZLQCKgBGAsYHg/s1600/Icon315.png">
                                             <b>Missão:</b>
-                                            <?php echo fs($row3['motto']) ?>
+                                            <?php echo Oblivion\Filter::fs($row3['motto']) ?>
                                                 <br>
 
                                                 
@@ -316,13 +316,13 @@ while ($bss = $aa->fetch_assoc()) {
                                             <!-- 001 -->
                                             <img src="https://4.bp.blogspot.com/-opxiFJrR7p8/XZVaFjWpBAI/AAAAAAABWaU/vVbAzfkicbkx4d8QewXpmJeqc35I_UNaQCKgBGAsYHg/s1600/Icon84.png">
                                             <b>Pontos de promoção:</b>
-                                            <?php echo fs($row3['pontos_promocao']) ?>
+                                            <?php echo Oblivion\Filter::fs($row3['pontos_promocao']) ?>
                                                 <br>
 
 
                                                  <img src="https://2.bp.blogspot.com/-098Yeb26X6w/XZVaFlxo2bI/AAAAAAABWaU/b0KJ3x5wQMUCbHyJq-Lq6J2H61lvkVEtgCKgBGAsYHg/s1600/Icon306.png">
                                             <b>Eventos ganhos:</b>
-                                            <?php echo fs($row3['pontos_evento']) ?>
+                                            <?php echo Oblivion\Filter::fs($row3['pontos_evento']) ?>
                                                 <br>
 
 
@@ -331,14 +331,14 @@ while ($bss = $aa->fetch_assoc()) {
                                                 <!-- 001 -->
                                                 <img src="https://2.bp.blogspot.com/-uEMyF4kRcE0/XZVaFvJ9qVI/AAAAAAABWaU/w5j7T0NwegYJf0E7wrW3sfDXopBqktdwQCKgBGAsYHg/s1600/Icon58.png">
                                                 <b>Discord:</b>
-                                                <?php echo fs($row3['discord']) ?>
+                                                <?php echo Oblivion\Filter::fs($row3['discord']) ?>
                                                     <br>
                                                     <!-- 001 -->
 
                                                     <!-- 001 -->
                                                     <img src="https://1.bp.blogspot.com/-fwCjMfsN0ME/XZVaFgsShjI/AAAAAAABWaU/cT3cQUzCarQ80QItLkhiItWKMLA1TOZ1wCKgBGAsYHg/s1600/Icon29.png">
                                                     <b>Referidos:</b>
-                                                    <?php echo fs($row3['referidos']) ?>
+                                                    <?php echo Oblivion\Filter::fs($row3['referidos']) ?>
                                                         <br>
                                                         <!-- 001 -->
 

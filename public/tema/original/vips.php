@@ -48,7 +48,7 @@ include 'header.php';
 
 
                                                             </div>
-                            <div><b>Missão: </b><?php echo fs($row2['motto']) ?></div>
+                            <div><b>Missão: </b><?php echo Oblivion\Filter::fs($row2['motto']) ?></div>
                             <div><b>Discord: </b><?php echo $row2['discord'] ?></div>
                         </div>
                     </div>
