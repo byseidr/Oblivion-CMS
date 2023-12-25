@@ -19,7 +19,7 @@ include 'header.php';
                                 
                                 <?php
                                 $sql3 = "SELECT * FROM users WHERE rank=3";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
                                 <div class="col-md-6">

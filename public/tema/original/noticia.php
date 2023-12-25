@@ -5,7 +5,7 @@ if (is_numeric(noticiafinal))
 else
 	$noticiafinal = 0;
 $qra        = "SELECT * FROM cms_news WHERE id=".$noticiafinal." LIMIT 1";
-if ($ra = mysqli_query(conn, $qra)) {
+if ($ra = Oblivion\Db::query($qra)) {
 $existe = mysqli_num_rows($ra);
 if ($existe == $vlsalsa) {
 header("Location: /".$_ENV['404PAGE']."");
@@ -13,10 +13,10 @@ header("Location: /".$_ENV['404PAGE']."");
 mysqli_free_result($ra);
 }
 $sql3 = "SELECT * FROM cms_news WHERE id=".$noticiafinal." LIMIT 1";
-$query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+$query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
 while ($row3 = $query1->fetch_assoc()) {
 $fnsalsa = "UPDATE cms_news SET type = type+1 WHERE id = '" . $row3['id'] . "'";
-conn->query($fnsalsa); 
+Oblivion\Db::query($fnsalsa); 
 $titulo = "".$row3['title']." - ".nome."";
 include 'header.php';
 ?>
@@ -30,7 +30,7 @@ include 'header.php';
                     <?php
 
                 $sql3 = "SELECT * FROM cms_news order by id DESC LIMIT 30";
-$query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+$query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
 while ($row2 = $query1->fetch_assoc()) {
 
     ?>
@@ -75,7 +75,7 @@ while ($row2 = $query1->fetch_assoc()) {
                                 <?php
 
                 $sql34 = "SELECT * FROM users WHERE username='".$row3['author']."'";
-$query12 = mysqli_query(conn, $sql34) or die(mysqli_error(conn));
+$query12 = Oblivion\Db::query($sql34) or die(Oblivion\Db::error());
 while ($row22 = $query12->fetch_assoc()) {
 
     ?>
@@ -116,7 +116,7 @@ if (cur != null || sessao != null || usuario != null)
     
     ?>
 
-                <?php SalsaConta::comentar_noticia(conn) ?>
+                <?php Oblivion\Account::comentar_noticia() ?>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -156,7 +156,7 @@ if (cur != null || sessao != null || usuario != null)
                         ?>
                                 <?php
     $sql31 = "SELECT * FROM salsa_comentarios_noticia WHERE noticia='".$row3['id']."' order by id DESC LIMIT 20";
-$aa = mysqli_query(conn, $sql31) or die(mysqli_error(conn));
+$aa = Oblivion\Db::query($sql31) or die(Oblivion\Db::error());
 while ($bss = $aa->fetch_assoc()) {
     ?>
 

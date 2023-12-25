@@ -179,7 +179,7 @@
                     <div class="pull-right">
                         <div style="float:right; margin-top: 10px; padding:10px; text-align: center; background-color: #fff; border-radius: 5px;">
                             <div style="padding: 6px; width: 60px;  line-height: 80%;">
-                                <span class="onlineUsersNumber ng-binding"><?php SalsaDado::usuarios_online(conn) ?></span>
+                                <span class="onlineUsersNumber ng-binding"><?php Oblivion\Data::usuarios_online() ?></span>
                                 <small ng-show="usersOnStatus !== 0" class="" style="">
                                 <i ng-show="usersOnStatus &gt; 0" style="color:#459b4a" class="fas fa-level-up ng-hide" aria-hidden="true"></i>
                                 <i ng-show="usersOnStatus &lt; 0" style="color:#c43c3c" class="fas fa-level-down ng-hide" aria-hidden="true"></i>
@@ -261,7 +261,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php
                                 $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
-                                $query2 = mysqli_query(conn, $sql4) or die(mysqli_error(conn));
+                                $query2 = Oblivion\Db::query($sql4) or die(Oblivion\Db::error());
                                 while ($row4 = $query2->fetch_assoc()) { ?>
                                 <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
 

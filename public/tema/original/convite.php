@@ -6,19 +6,19 @@ if (cur != null || sessao != null || usuario != null)
  }
 $vlsalsa = 1;
 $qra = "SELECT * FROM users WHERE username='" . noticiafinal . "' ORDER BY id DESC LIMIT 1";
-if ($ra = mysqli_query(conn, $qra)) {
+if ($ra = Oblivion\Db::query($qra)) {
     $existe = mysqli_num_rows($ra);
     if ($existe == $vlsalsa) {
         $ST = $qra;
-        $QR = mysqli_query(conn, $ST) or die(mysqli_error(conn));
+        $QR = Oblivion\Db::query($ST) or die(Oblivion\Db::error());
         while ($FUNCTION = $QR->fetch_assoc()) {
             if ($FUNCTION['ip_current'] == $_SERVER['REMOTE_ADDR']) {
                 $remove = "UPDATE users SET referidos = referidos-1 WHERE username = '" . $FUNCTION['username'] . "'";
-                conn->query($remove);
+                Oblivion\Db::query($remove);
                 echo "<script>window.location.href='/registro?=erro';</script>";
             } elseif ($FUNCTION['ip_current'] != $_SERVER['REMOTE_ADDR']) {
                 $remove = "UPDATE users SET referidos = referidos+1 WHERE username = '" . $FUNCTION['username'] . "'";
-                conn->query($remove);
+                Oblivion\Db::query($remove);
                 echo "<script>window.location.href='/registro?=sucesso';</script>";
             }
         }

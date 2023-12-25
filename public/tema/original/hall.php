@@ -12,7 +12,7 @@ include 'header.php';
         
  <?php
                                 $sql3 = "SELECT * FROM users order by pontos_promocao DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
 
@@ -52,7 +52,7 @@ include 'header.php';
               
               <?php
                                 $sql3 = "SELECT * FROM users order by pontos_evento DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
 
@@ -91,7 +91,7 @@ include 'header.php';
                 
                                     <?php
                                 $sql3 = "SELECT * FROM users order by credits DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
 
@@ -130,7 +130,7 @@ include 'header.php';
         
  <?php
                                 $sql3 = "SELECT * FROM users order by referidos DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
 
@@ -177,7 +177,7 @@ include 'header.php';
         
  <?php
                                 $sql3 = "SELECT * FROM users order by pixels DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
         ?>
 
@@ -234,11 +234,11 @@ include 'header.php';
         
  <?php
                                 $sql3 = "SELECT * FROM users_settings order by achievement_score DESC LIMIT 6";
-    $query1 = mysqli_query(conn, $sql3) or die(mysqli_error(conn));
+    $query1 = Oblivion\Db::query($sql3) or die(Oblivion\Db::error());
     while ($row2 = $query1->fetch_assoc()) {
 
         $ikndiu = "SELECT * FROM users WHERE id='".$row2['user_id']."'";
-    $awknmdjkan = mysqli_query(conn, $ikndiu) or die(mysqli_error(conn));
+    $awknmdjkan = Oblivion\Db::query($ikndiu) or die(Oblivion\Db::error());
     while ($h4 = $awknmdjkan->fetch_assoc()) {
         ?>
 

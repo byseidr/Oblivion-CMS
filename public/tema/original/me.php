@@ -29,7 +29,7 @@ include 'header.php' ?>
 
                 </div>
                
-                <?php SalsaConta::publicar(conn); SalsaConta::curtir(conn) ?>
+                <?php Oblivion\Account::publicar(); Oblivion\Account::curtir() ?>
                  <?php
                         if (isset($_SESSION['erro']))
                         {
@@ -66,11 +66,11 @@ include 'header.php' ?>
 
                             <?php
                             $sql = "SELECT * FROM salsa_posts order by id DESC LIMIT 20";
-      $query = mysqli_query(conn, $sql) or die(mysqli_error(conn));
+      $query = Oblivion\Db::query($sql) or die(Oblivion\Db::error());
       while($row = $query->fetch_assoc())
       {
          $nova = "SELECT * FROM users WHERE username='".$row['usuario']."'";
-        $qrm = mysqli_query(conn, $nova) or die(mysqli_error(conn));
+        $qrm = Oblivion\Db::query($nova) or die(Oblivion\Db::error());
         while($row77 = $qrm->fetch_assoc())
         {
             
@@ -261,7 +261,7 @@ include 'header.php' ?>
                             <div class="carousel-inner">
                                   <?php
                             $sql = "SELECT * FROM cms_news order by id DESC LIMIT 1";
-      $qaqa = mysqli_query(conn, $sql) or die(mysqli_error(conn));
+      $qaqa = Oblivion\Db::query($sql) or die(Oblivion\Db::error());
       while($row111 = $qaqa->fetch_assoc())
       {
         ?>
@@ -285,7 +285,7 @@ include 'header.php' ?>
                     </div>
                        <?php
                             $a = "SELECT * FROM cms_news order by id DESC LIMIT 6";
-      $gg = mysqli_query(conn, $a) or die(mysqli_error(conn));
+      $gg = Oblivion\Db::query($a) or die(Oblivion\Db::error());
       while($noticia = $gg->fetch_assoc())
       {
         ?>
@@ -307,7 +307,7 @@ include 'header.php' ?>
                         
                       <?php
       $aBC = "SELECT * FROM users order by credits DESC LIMIT 6";
-      $QQ = mysqli_query(conn, $aBC) or die(mysqli_error(conn));
+      $QQ = Oblivion\Db::query($aBC) or die(Oblivion\Db::error());
       while($MOEDAS = $QQ->fetch_assoc())
       {
         ?>
@@ -344,7 +344,7 @@ include 'header.php' ?>
  <input placeholder="Digite o nome de usuário..." class="form-control" type="text" name="usuariobus">
 
 
-            <?php SalsaConta::buscar_usuario(conn) ?>
+            <?php Oblivion\Account::buscar_usuario() ?>
            <br>
             <button style="float: right;" type="submit" name="pesq" class="btn btn-dark">Procurar</button> 
            <br>
