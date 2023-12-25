@@ -292,12 +292,6 @@
                                         <span style="font-weight: bold; opacity: 0;" ng-style="{&#39;opacity&#39;: newNotificationsCount &gt; 0 ? &#39;1&#39; : &#39;0&#39;}" class="ng-binding">0</span> <i ng-class="{&#39;far&#39; : newNotificationsCount == 0, &#39;fas floatingEffect&#39; : newNotificationsCount &gt; 0}" class="fa-bell far"></i>
                                     </a>
                                 </li>
-                                 <li class="nav-item">
-                            <a class="nav-link" href="<?php echo URL ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-download"></i> Download APP
-                            </a>
-                            
-                        </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo URL ?>/<?php echo CLIENT ?>"><i class="far fa-building"></i> Entrar no Hotel</a>
                                 </li>
